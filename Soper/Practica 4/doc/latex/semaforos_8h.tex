@@ -1,0 +1,104 @@
+\hypertarget{semaforos_8h}{\section{semaforos.\+h File Reference}
+\label{semaforos_8h}\index{semaforos.\+h@{semaforos.\+h}}
+}
+
+
+\hyperlink{semaforos_8h}{semaforos.\+h}  
+
+
+{\ttfamily \#include $<$sys/types.\+h$>$}\\*
+{\ttfamily \#include $<$sys/ipc.\+h$>$}\\*
+{\ttfamily \#include $<$sys/sem.\+h$>$}\\*
+{\ttfamily \#include $<$sys/shm.\+h$>$}\\*
+{\ttfamily \#include $<$errno.\+h$>$}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$signal.\+h$>$}\\*
+{\ttfamily \#include $<$unistd.\+h$>$}\\*
+Include dependency graph for semaforos.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{semaforos_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{semaforos_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__Mensaje}{\+\_\+\+Mensaje}
+\begin{DoxyCompactList}\small\item\em Mensaje. \end{DoxyCompactList}\item 
+struct \hyperlink{structAula}{Aula}
+\begin{DoxyCompactList}\small\item\em \hyperlink{structAula}{Aula}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{struct__Mensaje}{\+\_\+\+Mensaje} \hyperlink{semaforos_8h_a0b62810db7104177e9427c356d59277e}{mensaje}
+\begin{DoxyCompactList}\small\item\em Mensaje. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{semaforos_8h_a32c27cc471df37f4fc818d65de0a56c4}{enum {\bfseries S\+T\+A\+T\+U\+S} \{ {\bfseries O\+K} =0, 
+{\bfseries E\+R\+R\+O\+R} =-\/1
+ \}}\label{semaforos_8h_a32c27cc471df37f4fc818d65de0a56c4}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{semaforos_8h_a4af104b0ed37e6ae0289a1059bc6e990}{int {\bfseries Inicializar\+\_\+\+Semaforo} (int semid, unsigned short $\ast$array)}\label{semaforos_8h_a4af104b0ed37e6ae0289a1059bc6e990}
+
+\item 
+\hypertarget{semaforos_8h_a731339337960a681efa435a10f12c312}{int {\bfseries Borrar\+\_\+\+Semaforo} (int semid)}\label{semaforos_8h_a731339337960a681efa435a10f12c312}
+
+\item 
+\hypertarget{semaforos_8h_a16b16dd895b5f4cbe48f1ac8977e8b35}{int {\bfseries Crear\+\_\+\+Semaforo} (key\+\_\+t key, int size, int $\ast$semid)}\label{semaforos_8h_a16b16dd895b5f4cbe48f1ac8977e8b35}
+
+\item 
+\hypertarget{semaforos_8h_a883244cd3b83c42cda23687da1b63369}{int {\bfseries Down\+\_\+\+Semaforo} (int id, int num\+\_\+sem, int undo)}\label{semaforos_8h_a883244cd3b83c42cda23687da1b63369}
+
+\item 
+\hypertarget{semaforos_8h_ab375ebfc38acbdced46e062a689d5fad}{int {\bfseries Down\+Multiple\+\_\+\+Semaforo} (int id, int size, int undo, int $\ast$active)}\label{semaforos_8h_ab375ebfc38acbdced46e062a689d5fad}
+
+\item 
+\hypertarget{semaforos_8h_a2d5e735aecee4f493898b3d4ebab1a10}{int {\bfseries Up\+\_\+\+Semaforo} (int id, int num\+\_\+sem, int undo)}\label{semaforos_8h_a2d5e735aecee4f493898b3d4ebab1a10}
+
+\item 
+\hypertarget{semaforos_8h_a943759695f018d64a94b8a2c49308092}{int {\bfseries Up\+Multiple\+\_\+\+Semaforo} (int id, int size, int undo, int $\ast$active)}\label{semaforos_8h_a943759695f018d64a94b8a2c49308092}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{semaforos_8h}{semaforos.\+h} 
+
+\begin{DoxyAuthor}{Author}
+Oscar Garcia de Lara Parreño 
+
+Santiago Gomez Aguirre 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+29-\/03¡4-\/2016 
+\end{DoxyDate}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{semaforos_8h_a0b62810db7104177e9427c356d59277e}{\index{semaforos.\+h@{semaforos.\+h}!mensaje@{mensaje}}
+\index{mensaje@{mensaje}!semaforos.\+h@{semaforos.\+h}}
+\subsubsection[{mensaje}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \+\_\+\+Mensaje} {\bf mensaje}}}\label{semaforos_8h_a0b62810db7104177e9427c356d59277e}
+
+
+Mensaje. 
+
+Esta estructura define un mensaje. 

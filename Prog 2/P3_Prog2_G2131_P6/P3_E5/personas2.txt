@@ -1,0 +1,14 @@
+5
+Maria 2
+5 Spain
+1 Germany
+Miguel 1
+2 Italy
+Carlos 3
+2 France
+1 Poland
+5 Spain
+Daniel 0
+Andrea 5
+1 Spain
+10 Italy

@@ -1,0 +1,12 @@
+3
+Pepe 3
+5 francia
+5 españa
+2 italia
+Antonio 2
+1 francia 
+2 españa
+Ismael 3
+5 francia
+10 italia
+2 españa

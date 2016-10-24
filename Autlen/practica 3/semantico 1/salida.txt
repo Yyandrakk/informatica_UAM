@@ -1,0 +1,13 @@
+SIMBOLO: (
+ENTERO: 3
+SIMBOLO: +
+ENTERO: 2
+SIMBOLO: )
+<5> -> <3> + <2>
+<5> -> - (<5>)
+SIMBOLO: *
+SIMBOLO: -
+ENTERO: 4
+<-4> -> - <4>
+<-20> -> <5> * <-4>
+resultado -> <-20>

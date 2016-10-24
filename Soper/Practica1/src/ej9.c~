@@ -1,0 +1,246 @@
+/**
+*@brief El ejercicio 9 de la Practica 1 SOPER
+*
+*@file ej9.c
+*@author Oscar Garcia de Lara Parreño
+*@author Santiago Gomez Aguirre
+*@version 1.0
+*@date 18-02-2016
+**/
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include <sys/types.h>
+#include <sys/wait.h>
+
+/**
+*@brief tuberias
+*Ejecutamos un programa que comunica padres e hijos a traves de tuberias, mandandose mensajes.
+*@return EXIT_FAILURE en caso de error, EXIT_SUCCESS si funciona
+**/
+int main(void)
+{
+	int fd[2],fd2[2],fd3[2],fd4[2],fd5[2],fd6[2],fd7[2],fd8[2],fd9[2],fd10[2],fd11[2],fd12[2], nbytes, pipe_status;
+	pid_t childpid;
+	char mInicial[100] = "Datos enviados a traves de la tuberia\n";
+  char mHijoAHijo[100];
+	char mHijoAPadre[100];
+  char pid[8];
+	char readbuffer[160];
+	char readbuffer2[160];
+	char mFinal[400]="Por el primer hijo viene:\n ";
+	pipe_status=pipe(fd);
+
+	if(pipe_status==-1) {
+	    perror("Error creando la tuberia\n");
+	    exit(EXIT_FAILURE);
+	}
+
+	pipe_status=pipe(fd2);
+
+	if(pipe_status==-1) {
+	    perror("Error creando la tuberia\n");
+	    exit(EXIT_FAILURE);
+	}
+
+
+
+
+	if((childpid = fork()) ==-1){
+	    perror("fork");
+	    exit(EXIT_FAILURE);
+	}
+	else if(childpid == 0){
+    /* 1º HIJO DEL PADRE */
+	    sleep(1);
+	    close(fd[1]);
+	    nbytes = read(fd[0], readbuffer, sizeof(readbuffer));
+	    printf("Hijo 1 he recibido del padre: %s\n", readbuffer);
+      sprintf( mHijoAHijo,"Datos enviados a traves de la tuberia por el proceso PID=%d",getpid());
+
+			pipe_status=pipe(fd5);
+
+	    if(pipe_status==-1) {
+	        perror("Error creando la tuberia\n");
+	        exit(EXIT_FAILURE);
+	    }
+	    pipe_status=pipe(fd6);
+	    if(pipe_status==-1) {
+	        perror("Error creando la tuberia\n");
+	        exit(EXIT_FAILURE);
+	    }
+      if((childpid = fork()) ==-1){
+	        perror("fork");
+	        exit(EXIT_FAILURE);
+	    }
+	    else if(childpid == 0){
+            /*1º HIJO DE HIJO 1*/
+	        sleep(1);
+	        close(fd5[1]);
+	        nbytes = read(fd5[0], readbuffer, sizeof(readbuffer));
+	        printf("1º Hijo de hijo 1 ha recibido: %s\n", readbuffer);
+					sprintf( mHijoAPadre,"Datos devueltos a través de la tuberia por el proceso PID=%d",getpid());
+					close(fd6[0]);
+					write(fd6[1], mHijoAPadre, strlen(mHijoAPadre)+1);
+
+
+	    }else{
+	        close(fd5[0]);
+	        write(fd5[1], mHijoAHijo, strlen(mHijoAHijo)+1);
+					pipe_status=pipe(fd7);
+
+					if(pipe_status==-1) {
+							perror("Error creando la tuberia\n");
+							exit(EXIT_FAILURE);
+					}
+					pipe_status=pipe(fd8);
+					if(pipe_status==-1) {
+							perror("Error creando la tuberia\n");
+							exit(EXIT_FAILURE);
+					}
+					if((childpid = fork()) ==-1){
+							perror("fork");
+							exit(EXIT_FAILURE);
+					}
+					else if(childpid == 0){
+								/*2º HIJO DE HIJO 1*/
+							sleep(1);
+							close(fd7[1]);
+							nbytes = read(fd7[0], readbuffer, sizeof(readbuffer));
+							printf("2º Hijo de hijo 1 ha recibido: %s\n", readbuffer);
+							sprintf( mHijoAPadre,"Datos devueltos a través de la tuberia por el proceso PID=%d",getpid());
+							close(fd8[0]);
+							write(fd8[1], mHijoAPadre, strlen(mHijoAPadre)+1);
+
+
+					}else{
+							close(fd7[0]);
+							write(fd7[1], mHijoAHijo, strlen(mHijoAHijo)+1);
+							while(wait(NULL)!=-1);
+							close(fd6[1]);
+							nbytes = read(fd6[0], readbuffer, sizeof(readbuffer));
+							close(fd8[1]);
+							nbytes = read(fd8[0], readbuffer2, sizeof(readbuffer2));
+							strcat(readbuffer," y ");
+							strcat(readbuffer,readbuffer2);
+							close(fd2[0]);
+							write(fd2[1],readbuffer,strlen(readbuffer)+1);
+						}
+		}
+	}else{
+	    close(fd[0]);
+	    write(fd[1], mInicial, strlen(mInicial)+1);
+
+	    pipe_status=pipe(fd3);
+
+	    if(pipe_status==-1) {
+	        perror("Error creando la tuberia\n");
+	        exit(EXIT_FAILURE);
+	    }
+	    pipe_status=pipe(fd4);
+	    if(pipe_status==-1) {
+	        perror("Error creando la tuberia\n");
+	        exit(EXIT_FAILURE);
+	    }
+	    if((childpid = fork()) ==-1){
+	        perror("fork");
+	        exit(EXIT_FAILURE);
+	    }
+	    else if(childpid == 0){
+            /*2º HIJO DEL PADRE*/
+	        sleep(1);
+	        close(fd3[1]);
+	        nbytes = read(fd3[0], readbuffer, sizeof(readbuffer));
+	        printf("Hijo 2 he recibido del padre: %s\n", readbuffer);
+					sprintf( mHijoAHijo,"Datos enviados a traves de la tuberia por el proceso PID=%d",getpid());
+
+					pipe_status=pipe(fd9);
+
+					if(pipe_status==-1) {
+							perror("Error creando la tuberia\n");
+							exit(EXIT_FAILURE);
+					}
+					pipe_status=pipe(fd10);
+					if(pipe_status==-1) {
+							perror("Error creando la tuberia\n");
+							exit(EXIT_FAILURE);
+					}
+					if((childpid = fork()) ==-1){
+							perror("fork");
+							exit(EXIT_FAILURE);
+					}
+					else if(childpid == 0){
+								/*1º HIJO DE HIJO 2*/
+							sleep(1);
+							close(fd9[1]);
+							nbytes = read(fd9[0], readbuffer, sizeof(readbuffer));
+							printf("1º Hijo de hijo 2 ha recibido: %s\n", readbuffer);
+							sprintf( mHijoAPadre,"Datos devueltos a través de la tuberia por el proceso PID=%d",getpid());
+							close(fd10[0]);
+							write(fd10[1], mHijoAPadre, strlen(mHijoAPadre)+1);
+
+
+					}else{
+							close(fd9[0]);
+							write(fd9[1], mHijoAHijo, strlen(mHijoAHijo)+1);
+							pipe_status=pipe(fd11);
+
+							if(pipe_status==-1) {
+									perror("Error creando la tuberia\n");
+									exit(EXIT_FAILURE);
+							}
+							pipe_status=pipe(fd12);
+							if(pipe_status==-1) {
+									perror("Error creando la tuberia\n");
+									exit(EXIT_FAILURE);
+							}
+							if((childpid = fork()) ==-1){
+									perror("fork");
+									exit(EXIT_FAILURE);
+							}
+							else if(childpid == 0){
+										/*2º HIJO DE HIJO 2*/
+									sleep(1);
+									close(fd11[1]);
+									nbytes = read(fd11[0], readbuffer, sizeof(readbuffer));
+									printf("2º Hijo de hijo 2 ha recibido: %s\n", readbuffer);
+									sprintf( mHijoAPadre,"Datos devueltos a través de la tuberia por el proceso PID=%d",getpid());
+									close(fd12[0]);
+									write(fd12[1], mHijoAPadre, strlen(mHijoAPadre)+1);
+
+
+							}else{
+									close(fd11[0]);
+									write(fd11[1], mHijoAHijo, strlen(mHijoAHijo)+1);
+									while(wait(NULL)!=-1);
+									close(fd10[1]);
+									nbytes = read(fd10[0], readbuffer, sizeof(readbuffer));
+									close(fd12[1]);
+									nbytes = read(fd12[0], readbuffer2, sizeof(readbuffer2));
+									strcat(readbuffer," y ");
+									strcat(readbuffer,readbuffer2);
+									close(fd4[0]);
+									write(fd4[1],readbuffer,strlen(readbuffer)+1);
+								}
+				}
+
+
+	    }else{
+	        close(fd3[0]);
+	        write(fd3[1], mInicial, strlen(mInicial)+1);
+					/* PADRE */
+					while(wait(NULL)!=-1);
+					close(fd2[1]);
+					nbytes = read(fd2[0], readbuffer, sizeof(readbuffer));
+					close(fd4[1]);
+					nbytes = read(fd4[0], readbuffer2, sizeof(readbuffer2));
+					strcat(mFinal,readbuffer);
+					strcat(mFinal,"\nPor el segundo hijo viene:\n ");
+					strcat(mFinal,readbuffer2);
+					printf("%s\n",mFinal );
+	    }
+	}
+	exit(EXIT_SUCCESS);
+
+}

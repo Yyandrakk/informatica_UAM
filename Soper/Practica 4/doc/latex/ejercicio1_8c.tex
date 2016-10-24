@@ -1,0 +1,82 @@
+\hypertarget{ejercicio1_8c}{\section{ejercicio1.\+c File Reference}
+\label{ejercicio1_8c}\index{ejercicio1.\+c@{ejercicio1.\+c}}
+}
+
+
+El ejercicio 1 de la Practica 4 S\+O\+P\+E\+R.  
+
+
+{\ttfamily \#include $<$sys/types.\+h$>$}\\*
+{\ttfamily \#include $<$sys/ipc.\+h$>$}\\*
+{\ttfamily \#include $<$sys/msg.\+h$>$}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$sys/wait.\+h$>$}\\*
+Include dependency graph for ejercicio1.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ejercicio1_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__Mensaje}{\+\_\+\+Mensaje}
+\begin{DoxyCompactList}\small\item\em Mensaje. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{struct__Mensaje}{\+\_\+\+Mensaje} \hyperlink{ejercicio1_8c_a0b62810db7104177e9427c356d59277e}{mensaje}
+\begin{DoxyCompactList}\small\item\em Mensaje. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{ejercicio1_8c_abf9e6b7e6f15df4b525a2e7705ba3089}{main} (int argc, char const $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Varios procesos se comunican a traves de colas de mensajes Los procesos se comunican entre si para pasar el contenido de un fichero a otro pero todos los caracteres a mayusculas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+El ejercicio 1 de la Practica 4 S\+O\+P\+E\+R. 
+
+\begin{DoxyAuthor}{Author}
+Oscar Garcia de Lara Parreño 
+
+Santiago Gomez Aguirre 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+29-\/04-\/2016 
+\end{DoxyDate}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{ejercicio1_8c_a0b62810db7104177e9427c356d59277e}{\index{ejercicio1.\+c@{ejercicio1.\+c}!mensaje@{mensaje}}
+\index{mensaje@{mensaje}!ejercicio1.\+c@{ejercicio1.\+c}}
+\subsubsection[{mensaje}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \+\_\+\+Mensaje} {\bf mensaje}}}\label{ejercicio1_8c_a0b62810db7104177e9427c356d59277e}
+
+
+Mensaje. 
+
+Esta estructura define un mensaje. 
+
+\subsection{Function Documentation}
+\hypertarget{ejercicio1_8c_abf9e6b7e6f15df4b525a2e7705ba3089}{\index{ejercicio1.\+c@{ejercicio1.\+c}!main@{main}}
+\index{main@{main}!ejercicio1.\+c@{ejercicio1.\+c}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char const $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{ejercicio1_8c_abf9e6b7e6f15df4b525a2e7705ba3089}
+
+
+Varios procesos se comunican a traves de colas de mensajes Los procesos se comunican entre si para pasar el contenido de un fichero a otro pero todos los caracteres a mayusculas. 
+
+\begin{DoxyReturn}{Returns}
+E\+X\+I\+T\+\_\+\+F\+A\+I\+L\+U\+R\+E en caso de error, E\+X\+I\+T\+\_\+\+S\+U\+C\+C\+E\+S\+S si funciona 
+\end{DoxyReturn}

@@ -1,0 +1,15 @@
+var;
+T;
+F;
+T AND F;
+T AND F OR T;
+T AND (F OR T);
+T OR x;
+T NOR F;
+ab NOR F;
+T NAND F;
+T NAND x;
+(a OR T) AND F;
+x AND T NOR y;
+F AND T NAND T;
+F NOR T NAND T;

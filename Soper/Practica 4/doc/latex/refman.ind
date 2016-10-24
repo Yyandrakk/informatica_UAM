@@ -1,0 +1,20 @@
+\begin{theindex}
+
+  \item {asientos}
+    \subitem {Aula}, \hyperpage{6}
+  \item {Aula}, \hyperpage{6}
+    \subitem {asientos}, \hyperpage{6}
+    \subitem {disponible}, \hyperpage{6}
+    \subitem {total}, \hyperpage{6}
+
+  \indexspace
+
+  \item {disponible}
+    \subitem {Aula}, \hyperpage{6}
+
+  \indexspace
+
+  \item {total}
+    \subitem {Aula}, \hyperpage{6}
+
+\end{theindex}

@@ -1,0 +1,119 @@
+\hypertarget{ejercicio8_8c}{\section{ejercicio8.\+c File Reference}
+\label{ejercicio8_8c}\index{ejercicio8.\+c@{ejercicio8.\+c}}
+}
+
+
+El ejercicio 8 de la Practica 2 S\+O\+P\+E\+R.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$sys/wait.\+h$>$}\\*
+{\ttfamily \#include $<$sys/types.\+h$>$}\\*
+{\ttfamily \#include $<$unistd.\+h$>$}\\*
+{\ttfamily \#include $<$signal.\+h$>$}\\*
+Include dependency graph for ejercicio8.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ejercicio8_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{ejercicio8_8c_acee2369f62e4a096d243dec3cd7d0b00}{\#define {\bfseries N\+U\+M\+\_\+\+P\+R\+O\+C}~4}\label{ejercicio8_8c_acee2369f62e4a096d243dec3cd7d0b00}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{ejercicio8_8c_af67f7ad6bdff3c40a6b1d97ae573fa4c}{manejador\+\_\+\+S\+I\+G\+U\+S\+R1} (int sig)
+\begin{DoxyCompactList}\small\item\em manejador de S\+I\+G\+U\+S\+R1 \end{DoxyCompactList}\item 
+void \hyperlink{ejercicio8_8c_a17e6a33c4f37ba645ad2b8067f75228b}{manejador\+\_\+\+S\+I\+G\+U\+S\+R2} (int sig)
+\begin{DoxyCompactList}\small\item\em manejador de S\+I\+G\+U\+S\+R2 \end{DoxyCompactList}\item 
+void \hyperlink{ejercicio8_8c_afc491f44f9a3771e97dc0256075f0f52}{manejador\+\_\+\+S\+I\+G\+T\+E\+R\+M} (int sig)
+\begin{DoxyCompactList}\small\item\em manejador de S\+I\+G\+U\+S\+T\+E\+R\+M \end{DoxyCompactList}\item 
+int \hyperlink{ejercicio8_8c_a840291bc02cba5474a4cb46a9b9566fe}{main} (void)
+\begin{DoxyCompactList}\small\item\em crea hijos y envian señales Crea todos los procesos de forma secuencial y se envian señales entre ellos \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+El ejercicio 8 de la Practica 2 S\+O\+P\+E\+R. 
+
+\begin{DoxyAuthor}{Author}
+Oscar Garcia de Lara Parreño 
+
+Santiago Gomez Aguirre 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+18-\/02-\/2016 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\hypertarget{ejercicio8_8c_a840291bc02cba5474a4cb46a9b9566fe}{\index{ejercicio8.\+c@{ejercicio8.\+c}!main@{main}}
+\index{main@{main}!ejercicio8.\+c@{ejercicio8.\+c}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{ejercicio8_8c_a840291bc02cba5474a4cb46a9b9566fe}
+
+
+crea hijos y envian señales Crea todos los procesos de forma secuencial y se envian señales entre ellos 
+
+\begin{DoxyReturn}{Returns}
+E\+X\+I\+T\+\_\+\+F\+A\+I\+L\+U\+R\+E en caso de error, E\+X\+I\+T\+\_\+\+S\+U\+C\+C\+E\+S\+S si funciona 
+\end{DoxyReturn}
+\hypertarget{ejercicio8_8c_afc491f44f9a3771e97dc0256075f0f52}{\index{ejercicio8.\+c@{ejercicio8.\+c}!manejador\+\_\+\+S\+I\+G\+T\+E\+R\+M@{manejador\+\_\+\+S\+I\+G\+T\+E\+R\+M}}
+\index{manejador\+\_\+\+S\+I\+G\+T\+E\+R\+M@{manejador\+\_\+\+S\+I\+G\+T\+E\+R\+M}!ejercicio8.\+c@{ejercicio8.\+c}}
+\subsubsection[{manejador\+\_\+\+S\+I\+G\+T\+E\+R\+M}]{\setlength{\rightskip}{0pt plus 5cm}void manejador\+\_\+\+S\+I\+G\+T\+E\+R\+M (
+\begin{DoxyParamCaption}
+\item[{int}]{sig}
+\end{DoxyParamCaption}
+)}}\label{ejercicio8_8c_afc491f44f9a3771e97dc0256075f0f52}
+
+
+manejador de S\+I\+G\+U\+S\+T\+E\+R\+M 
+
+Imprime la señal que es y el pid del proceso que la ha recibido 
+\begin{DoxyParams}{Parameters}
+{\em señal} & que recibe \\
+\hline
+\end{DoxyParams}
+\hypertarget{ejercicio8_8c_af67f7ad6bdff3c40a6b1d97ae573fa4c}{\index{ejercicio8.\+c@{ejercicio8.\+c}!manejador\+\_\+\+S\+I\+G\+U\+S\+R1@{manejador\+\_\+\+S\+I\+G\+U\+S\+R1}}
+\index{manejador\+\_\+\+S\+I\+G\+U\+S\+R1@{manejador\+\_\+\+S\+I\+G\+U\+S\+R1}!ejercicio8.\+c@{ejercicio8.\+c}}
+\subsubsection[{manejador\+\_\+\+S\+I\+G\+U\+S\+R1}]{\setlength{\rightskip}{0pt plus 5cm}void manejador\+\_\+\+S\+I\+G\+U\+S\+R1 (
+\begin{DoxyParamCaption}
+\item[{int}]{sig}
+\end{DoxyParamCaption}
+)}}\label{ejercicio8_8c_af67f7ad6bdff3c40a6b1d97ae573fa4c}
+
+
+manejador de S\+I\+G\+U\+S\+R1 
+
+Imprime la señal que es y el pid del proceso que la ha recibido 
+\begin{DoxyParams}{Parameters}
+{\em señal} & que recibe \\
+\hline
+\end{DoxyParams}
+\hypertarget{ejercicio8_8c_a17e6a33c4f37ba645ad2b8067f75228b}{\index{ejercicio8.\+c@{ejercicio8.\+c}!manejador\+\_\+\+S\+I\+G\+U\+S\+R2@{manejador\+\_\+\+S\+I\+G\+U\+S\+R2}}
+\index{manejador\+\_\+\+S\+I\+G\+U\+S\+R2@{manejador\+\_\+\+S\+I\+G\+U\+S\+R2}!ejercicio8.\+c@{ejercicio8.\+c}}
+\subsubsection[{manejador\+\_\+\+S\+I\+G\+U\+S\+R2}]{\setlength{\rightskip}{0pt plus 5cm}void manejador\+\_\+\+S\+I\+G\+U\+S\+R2 (
+\begin{DoxyParamCaption}
+\item[{int}]{sig}
+\end{DoxyParamCaption}
+)}}\label{ejercicio8_8c_a17e6a33c4f37ba645ad2b8067f75228b}
+
+
+manejador de S\+I\+G\+U\+S\+R2 
+
+Imprime la señal que es y el pid del proceso que la ha recibido 
+\begin{DoxyParams}{Parameters}
+{\em señal} & que recibe \\
+\hline
+\end{DoxyParams}

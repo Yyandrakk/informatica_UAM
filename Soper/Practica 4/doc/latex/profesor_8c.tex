@@ -1,0 +1,132 @@
+\hypertarget{profesor_8c}{\section{profesor.\+c File Reference}
+\label{profesor_8c}\index{profesor.\+c@{profesor.\+c}}
+}
+
+
+El profesor del proyecto de la Practica 4 S\+O\+P\+E\+R.  
+
+
+{\ttfamily \#include \char`\"{}profesor.\+h\char`\"{}}\\*
+Include dependency graph for profesor.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{profesor_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{profesor_8c_a4f970554c0f5991016f3caeb73fe7578}{void \hyperlink{profesor_8c_a4f970554c0f5991016f3caeb73fe7578}{manejador\+\_\+\+S\+I\+G\+A\+L\+R\+M\+\_\+5} (int sig)}\label{profesor_8c_a4f970554c0f5991016f3caeb73fe7578}
+
+\begin{DoxyCompactList}\small\item\em Manejador para la alarma de 5 minutos Obliga a terminar el examen a los alumnos que lo estan realizando. \end{DoxyCompactList}\item 
+void \hyperlink{profesor_8c_ab06fad87d99b4e5ad78c40afa4829521}{gestion\+\_\+profesor} (int pid, \hyperlink{structAula}{Aula} $\ast$aula, int num\+\_\+aula, int id\+\_\+cola, int id\+Mutex)
+\begin{DoxyCompactList}\small\item\em Profesor Gestiona lo que realiza el proceso profesor. \end{DoxyCompactList}\item 
+void \hyperlink{profesor_8c_a9bf602e55db8fdc42f00d45bd8bf3554}{gestion\+\_\+profesor\+\_\+examen} (int pid, \hyperlink{structAula}{Aula} $\ast$aula, int num\+\_\+aula, int id\+\_\+cola, int id\+Mutex)
+\begin{DoxyCompactList}\small\item\em Profesor\+\_\+examen Gestiona lo que realiza el proceso profesor\+\_\+examen. \end{DoxyCompactList}\item 
+int \hyperlink{profesor_8c_a6319aea0759e646e7b3e97b5b646ffe6}{comprobacion\+\_\+aula} (\hyperlink{structAula}{Aula} $\ast$aula)
+\begin{DoxyCompactList}\small\item\em Comprobacion\+\_\+aula Comprueba que el aula este disponible. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{profesor_8c_a172d23db2d6c23b1daea27d16c8316e6}{\hyperlink{structAula}{Aula} $\ast$ {\bfseries aulag}}\label{profesor_8c_a172d23db2d6c23b1daea27d16c8316e6}
+
+\item 
+\hypertarget{profesor_8c_adf611b6d315dbf8b63641ecedca82867}{int {\bfseries num\+\_\+aulag}}\label{profesor_8c_adf611b6d315dbf8b63641ecedca82867}
+
+\item 
+\hypertarget{profesor_8c_aeeb80ff72b5505d0644b2b9972e556bc}{int {\bfseries idmutexg}}\label{profesor_8c_aeeb80ff72b5505d0644b2b9972e556bc}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+El profesor del proyecto de la Practica 4 S\+O\+P\+E\+R. 
+
+\begin{DoxyAuthor}{Author}
+Oscar Garcia de Lara Parreño 
+
+Santiago Gomez Aguirre 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+29-\/04-\/2016 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\hypertarget{profesor_8c_a6319aea0759e646e7b3e97b5b646ffe6}{\index{profesor.\+c@{profesor.\+c}!comprobacion\+\_\+aula@{comprobacion\+\_\+aula}}
+\index{comprobacion\+\_\+aula@{comprobacion\+\_\+aula}!profesor.\+c@{profesor.\+c}}
+\subsubsection[{comprobacion\+\_\+aula}]{\setlength{\rightskip}{0pt plus 5cm}int comprobacion\+\_\+aula (
+\begin{DoxyParamCaption}
+\item[{{\bf Aula} $\ast$}]{aula}
+\end{DoxyParamCaption}
+)}}\label{profesor_8c_a6319aea0759e646e7b3e97b5b646ffe6}
+
+
+Comprobacion\+\_\+aula Comprueba que el aula este disponible. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$aula} & array de aulas \\
+\hline
+\end{DoxyParams}
+\hypertarget{profesor_8c_ab06fad87d99b4e5ad78c40afa4829521}{\index{profesor.\+c@{profesor.\+c}!gestion\+\_\+profesor@{gestion\+\_\+profesor}}
+\index{gestion\+\_\+profesor@{gestion\+\_\+profesor}!profesor.\+c@{profesor.\+c}}
+\subsubsection[{gestion\+\_\+profesor}]{\setlength{\rightskip}{0pt plus 5cm}void gestion\+\_\+profesor (
+\begin{DoxyParamCaption}
+\item[{int}]{pid, }
+\item[{{\bf Aula} $\ast$}]{aula, }
+\item[{int}]{num\+\_\+aula, }
+\item[{int}]{id\+\_\+cola, }
+\item[{int}]{id\+Mutex}
+\end{DoxyParamCaption}
+)}}\label{profesor_8c_ab06fad87d99b4e5ad78c40afa4829521}
+
+
+Profesor Gestiona lo que realiza el proceso profesor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pid} & pid del proceso \\
+\hline
+{\em $\ast$aula} & array de aulas \\
+\hline
+{\em num\+\_\+aula} & numero del aula en el que esta asignado (0 o 1) \\
+\hline
+{\em id\+\_\+cola} & id de la cola de mensajes \\
+\hline
+{\em id\+Mutex} & id del semafaro Mutex \\
+\hline
+\end{DoxyParams}
+\hypertarget{profesor_8c_a9bf602e55db8fdc42f00d45bd8bf3554}{\index{profesor.\+c@{profesor.\+c}!gestion\+\_\+profesor\+\_\+examen@{gestion\+\_\+profesor\+\_\+examen}}
+\index{gestion\+\_\+profesor\+\_\+examen@{gestion\+\_\+profesor\+\_\+examen}!profesor.\+c@{profesor.\+c}}
+\subsubsection[{gestion\+\_\+profesor\+\_\+examen}]{\setlength{\rightskip}{0pt plus 5cm}void gestion\+\_\+profesor\+\_\+examen (
+\begin{DoxyParamCaption}
+\item[{int}]{pid, }
+\item[{{\bf Aula} $\ast$}]{aula, }
+\item[{int}]{num\+\_\+aula, }
+\item[{int}]{id\+\_\+cola, }
+\item[{int}]{id\+Mutex}
+\end{DoxyParamCaption}
+)}}\label{profesor_8c_a9bf602e55db8fdc42f00d45bd8bf3554}
+
+
+Profesor\+\_\+examen Gestiona lo que realiza el proceso profesor\+\_\+examen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pid} & pid del proceso \\
+\hline
+{\em $\ast$aula} & array de aulas \\
+\hline
+{\em num\+\_\+aula} & numero del aula en el que esta asignado (0 o 1) \\
+\hline
+{\em id\+\_\+cola} & id de la cola de mensajes \\
+\hline
+{\em id\+Mutex} & id del semafaro Mutex \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,117 @@
+\hypertarget{ejercicio10_8c}{\section{ejercicio10.\+c File Reference}
+\label{ejercicio10_8c}\index{ejercicio10.\+c@{ejercicio10.\+c}}
+}
+
+
+El ejercicio 10 de la Practica 2 S\+O\+P\+E\+R.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$sys/wait.\+h$>$}\\*
+{\ttfamily \#include $<$sys/types.\+h$>$}\\*
+{\ttfamily \#include $<$signal.\+h$>$}\\*
+{\ttfamily \#include $<$unistd.\+h$>$}\\*
+Include dependency graph for ejercicio10.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ejercicio10_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{ejercicio10_8c_afc491f44f9a3771e97dc0256075f0f52}{manejador\+\_\+\+S\+I\+G\+T\+E\+R\+M} (int sig)
+\begin{DoxyCompactList}\small\item\em manejador\+\_\+\+S\+I\+G\+T\+E\+R\+M Libera la memoria y cierra los archivos antes de terminar la ejecucion \end{DoxyCompactList}\item 
+void \hyperlink{ejercicio10_8c_af37586694f10779b4ac9d3d92a274d75}{manejador\+\_\+\+S\+I\+G\+A\+L\+R\+M} (int sig)
+\begin{DoxyCompactList}\small\item\em manejador\+\_\+\+S\+I\+G\+A\+L\+R\+M Para el proceso padre cada vez que la alarma lanza la señal entra aca, lee una palabra del fichero, si es fin realanza el proceso hijo. \end{DoxyCompactList}\item 
+int \hyperlink{ejercicio10_8c_a840291bc02cba5474a4cb46a9b9566fe}{main} (void)
+\begin{DoxyCompactList}\small\item\em Dos procesos uno lee del fichero y el otro escribe. Dos procesos uno lee del fichero y el otro escribe, hasta un limite de 50 señales de S\+I\+G\+A\+L\+R\+M. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{ejercicio10_8c_ad1d1945ae40090155b4c29ad73b6ded0}{F\+I\+L\+E $\ast$ {\bfseries fichero} =N\+U\+L\+L}\label{ejercicio10_8c_ad1d1945ae40090155b4c29ad73b6ded0}
+
+\item 
+\hypertarget{ejercicio10_8c_aff2566f4c366b48d73479bef43ee4d2e}{char $\ast$ {\bfseries buffer} =N\+U\+L\+L}\label{ejercicio10_8c_aff2566f4c366b48d73479bef43ee4d2e}
+
+\item 
+\hypertarget{ejercicio10_8c_a9b66a08fa851a766bac885ae4a392be6}{int {\bfseries hijo\+Muerto} =1}\label{ejercicio10_8c_a9b66a08fa851a766bac885ae4a392be6}
+
+\item 
+\hypertarget{ejercicio10_8c_a2c6a3fb7cddd9bd7254692264962b5b3}{int {\bfseries contador} =0}\label{ejercicio10_8c_a2c6a3fb7cddd9bd7254692264962b5b3}
+
+\item 
+\hypertarget{ejercicio10_8c_ae0d46a978d5cd6707411f276ad869b9c}{pid\+\_\+t {\bfseries pid}}\label{ejercicio10_8c_ae0d46a978d5cd6707411f276ad869b9c}
+
+\item 
+\hypertarget{ejercicio10_8c_a2729357935d36b9e39bf6c7ea841c0c6}{long int {\bfseries pos}}\label{ejercicio10_8c_a2729357935d36b9e39bf6c7ea841c0c6}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+El ejercicio 10 de la Practica 2 S\+O\+P\+E\+R. 
+
+\begin{DoxyAuthor}{Author}
+Oscar Garcia de Lara Parreño 
+
+Santiago Gomez Aguirre 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+6-\/03-\/2016 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\hypertarget{ejercicio10_8c_a840291bc02cba5474a4cb46a9b9566fe}{\index{ejercicio10.\+c@{ejercicio10.\+c}!main@{main}}
+\index{main@{main}!ejercicio10.\+c@{ejercicio10.\+c}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{ejercicio10_8c_a840291bc02cba5474a4cb46a9b9566fe}
+
+
+Dos procesos uno lee del fichero y el otro escribe. Dos procesos uno lee del fichero y el otro escribe, hasta un limite de 50 señales de S\+I\+G\+A\+L\+R\+M. 
+
+\begin{DoxyReturn}{Returns}
+E\+X\+I\+T\+\_\+\+F\+A\+I\+L\+U\+R\+E en caso de error, E\+X\+I\+T\+\_\+\+S\+U\+C\+C\+E\+S\+S si funciona 
+\end{DoxyReturn}
+\hypertarget{ejercicio10_8c_af37586694f10779b4ac9d3d92a274d75}{\index{ejercicio10.\+c@{ejercicio10.\+c}!manejador\+\_\+\+S\+I\+G\+A\+L\+R\+M@{manejador\+\_\+\+S\+I\+G\+A\+L\+R\+M}}
+\index{manejador\+\_\+\+S\+I\+G\+A\+L\+R\+M@{manejador\+\_\+\+S\+I\+G\+A\+L\+R\+M}!ejercicio10.\+c@{ejercicio10.\+c}}
+\subsubsection[{manejador\+\_\+\+S\+I\+G\+A\+L\+R\+M}]{\setlength{\rightskip}{0pt plus 5cm}void manejador\+\_\+\+S\+I\+G\+A\+L\+R\+M (
+\begin{DoxyParamCaption}
+\item[{int}]{sig}
+\end{DoxyParamCaption}
+)}}\label{ejercicio10_8c_af37586694f10779b4ac9d3d92a274d75}
+
+
+manejador\+\_\+\+S\+I\+G\+A\+L\+R\+M Para el proceso padre cada vez que la alarma lanza la señal entra aca, lee una palabra del fichero, si es fin realanza el proceso hijo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\hypertarget{ejercicio10_8c_afc491f44f9a3771e97dc0256075f0f52}{\index{ejercicio10.\+c@{ejercicio10.\+c}!manejador\+\_\+\+S\+I\+G\+T\+E\+R\+M@{manejador\+\_\+\+S\+I\+G\+T\+E\+R\+M}}
+\index{manejador\+\_\+\+S\+I\+G\+T\+E\+R\+M@{manejador\+\_\+\+S\+I\+G\+T\+E\+R\+M}!ejercicio10.\+c@{ejercicio10.\+c}}
+\subsubsection[{manejador\+\_\+\+S\+I\+G\+T\+E\+R\+M}]{\setlength{\rightskip}{0pt plus 5cm}void manejador\+\_\+\+S\+I\+G\+T\+E\+R\+M (
+\begin{DoxyParamCaption}
+\item[{int}]{sig}
+\end{DoxyParamCaption}
+)}}\label{ejercicio10_8c_afc491f44f9a3771e97dc0256075f0f52}
+
+
+manejador\+\_\+\+S\+I\+G\+T\+E\+R\+M Libera la memoria y cierra los archivos antes de terminar la ejecucion 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sig} & Señal de entrada \\
+\hline
+\end{DoxyParams}

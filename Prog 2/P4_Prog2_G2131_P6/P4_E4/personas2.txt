@@ -1,0 +1,18 @@
+5
+Maria 2
+5 Spain
+1 Germany
+91 3932477
+Miguel 1
+2 Italy
+91 4783957
+Carlos 3
+2 France
+1 Poland
+5 Spain
+91 7484633
+Daniel 0
+91 4863836
+Andrea 5
+1 Spain
+10 Italy

@@ -1,0 +1,17 @@
+16
+5 Spain
+5 Italy
+2 Germany
+1 Portugal
+20 Spain
+10 France
+2 Greece
+10 France
+1 France
+50 Belgium
+20 Netherands
+50 Portugal
+2 Portugal
+1 Italy
+1 Spain
+50 Greece
