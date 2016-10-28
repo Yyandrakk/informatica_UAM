@@ -1,0 +1,62 @@
+{% extends "client/base.html" %}
+{% block extra_js %}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript">
+function getID(oObject)
+{
+    //clearTimeout(myRefresh);
+    //setTimeout(refresh, 10000)
+    var id = oObject.id;//
+    ////////////////////////alert("id=" + id);
+    id = id.substr(3);
+            $.ajax({
+
+                type: "GET",
+                url: "/client/move/?click=" + id , // this should grab only #table element...
+                success: function(data){},
+                failure: function(errMsg) {
+                       alert(errMsg);
+                }
+
+            })
+    }
+</script>
+<script type="text/javascript">
+    function refresh() {
+        $.ajax({
+            url: '/client/counter/', // this should grab only #table element...
+            success: function (data) {
+                // ...and it will insert it inside #result element
+                $('#replace_me').html(data);
+                setTimeout(refresh, 1000);
+            }
+        })
+    }
+</script>
+{% endblock extra_js %}
+
+{% block content %}
+<div>
+
+    <script type="text/javascript">
+        refresh();
+    </script>
+    <div id="replace_me">
+    </div>
+    <!--
+        {% if board %}
+        {% for item in board %}
+        {% if forloop.counter0|divisibleby:8 %}
+        <tr>{% endif %}
+            <td>{{ item }}</td>
+            {% if forloop.counter|divisibleby:3 or forloop.last %}
+        </tr>
+        {% endif %}
+        {% endfor %}
+        {% else %}
+        empty board
+        {% endif %}
+    -->
+</div>
+{% endblock content %}

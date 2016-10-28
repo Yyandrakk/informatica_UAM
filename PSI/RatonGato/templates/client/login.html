@@ -1,0 +1,25 @@
+{% extends "client/base.html" %}
+
+{% block atitle %}
+    <H1>Atrapa el ratón: LOGIN</H1>
+{% endblock atitle %}
+
+{% block content %}
+        <form id="login_user" method="post" action="/client/login/">
+    {% if message %}
+        <br />
+        ERROR: {{ message }}
+            <br />
+    {% endif %}
+
+            {% csrf_token %}
+
+            {% for field in form.visible_fields %}
+                {{ field.errors }}
+                {{ field.label }}
+                {{ field }}<br>
+            {% endfor %}
+
+            <input type="submit" name="submit" value="login_user" />
+        </form>
+{% endblock content %}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <!-- Some stuff here which should be included in all templates for example js or css -->
+    {% block extra_css %}
+    <link rel="stylesheet" href="{% static  'myStyle.css' %}">
+    <!-- to included app-template dependent css -->
+    {% endblock extra_css %}
+
+    {% block extra_js %}
+    <!-- to included app-template dependent js -->
+    {% endblock extra_js %}
+
+    {% block extra_head %}
+    <!-- for anything else inside head -->
+    {% endblock extra_head %}
+    <title>{% block title %}Rat&oacute;n y gato{% endblock %}</title>
+
+</head>
+
+<body>
+
+<!-- an icon and application name goes here -->
+<div id="title">
+    {% block atitle %}
+    <H1>Atrapa el ratón</H1>
+    {% endblock atitle %}
+    {% block content %}
+    <div id="content">
+        This is good
+    </div>
+    {% endblock content %}
+</div>
+
+<div id="header">
+    {% block menu %}
+    <!-- Default menu here -->
+    <a href="{% url 'client.views.login' %}">Login</a>
+    <a href="{% url 'client.views.register' %}">Register</a>
+
+
+    {% if username %} <a href="{% url 'client.views.logout' %}">Logout</a>{% endif %}
+
+
+</div>
+{% endblock menu %}
+
+
+
+{% block footer %}
+<div id="footer">
+    copyrigth 2015 by Oscar Garcia de Lara and Patricia Anza
+</div>
+{% endblock footer %}
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+{% if board %}
+<div id="tab">
+    <table id="chess_board" cellpadding="0" cellspacing="0">
+        {% for item in board %}
+        {% if forloop.counter0|divisibleby:8 %}
+            <tr>{% endif %}
+                <td id=id_{{ forloop.counter0}} onclick="getID(this);" >
+                {% if item == "." %}
+                {% elif item == 'm' %} <a href="#" id="mouse" class="tablero"></a>
+                {% else %} <a href="#" id="cat" class="tablero"></a>
+               </td>
+            {% if forloop.counter|divisibleby:8 or forloop.last %}
+                </tr>
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+    </table>
+</div>
+{% else %}
+
+{% endif %}

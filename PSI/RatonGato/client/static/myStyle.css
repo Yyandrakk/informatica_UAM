@@ -1,0 +1,122 @@
+body{
+    padding-top: 2em;
+    padding-bottom: 3em;
+    background:  #F5D0A9;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+#title{
+    padding-top: 2em;
+    padding-botton: 3em;
+    border:1px;
+    background:#FAAC58;
+    width: 100%;
+    margin-rigth:0;
+    margin-left:0;
+
+
+}
+#title h1 {
+    font-size: 2em;
+    line-height: 1.3em;
+    margin: 10px 0;
+    text-align: center;
+    font-weight: 300;
+}
+
+
+#title #content{
+    width: 100%;
+    float: left;
+    background:#819FF7 ;
+    margin: 20px auto;
+    padding-top: 2em;
+    padding-botton: 5em;
+    padding-left: 0em;
+    padding-rigth: 0em;
+    box-shadow: 10px 0 10px black;
+}
+
+form{
+    margin: 1em  20em 0 20em;
+}
+
+#header{
+    color:#610B0B;
+    background:#FFBF00;
+    height:2em;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    box-shadow: 10px 0 10px black;
+}
+#header a{
+    color:#610B0B;
+    text-align: center;
+}
+
+#footer {
+	background: #333;
+	color: white;
+	text-align: center;
+    height: 3em;
+    width: 100%;
+    left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	bottom: 0; /* Posicionamos la cabecera pegada arriba */
+	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+}
+#replace_me{
+    float:left;
+    margin-left: 20em;
+    padding-bottom: 3em;
+}
+.tablero {
+	color:#000;
+	display:block;
+	font-size:60px;
+	height:35px;
+	position:relative;
+	text-decoration:none;
+	text-shadow:0 1px #fff;
+	width:80px;
+}
+#tab {
+    width: 100%;
+    background:#819FF7;
+    margin-bottom: 0%;
+    box-shadow: 10px 0 10px black;
+}
+#tab #chess_board { border:5px solid #333; }
+#tab #chess_board td {
+	background:#F3E2A9;
+	background:-moz-linear-gradient(top, #F3E2A9, #eee);
+	background:-webkit-gradient(linear,0 0, 0 100%, from(#F3E2A9), to(#eee));
+	box-shadow:inset 0 0 0 1px #F3E2A9;
+	-moz-box-shadow:inset 0 0 0 1px #F3E2A9;
+	-webkit-box-shadow:inset 0 0 0 1px #F3E2A9;
+	height:80px;
+	text-align:center;
+	vertical-align:middle;
+	width:80px;
+}
+#tab #chess_board tr:nth-child(odd) td:nth-child(even),
+#tab #chess_board tr:nth-child(even) td:nth-child(odd) {
+	background:#61380B;
+	background:-moz-linear-gradient(top, #61380B, #eee);
+	background:-webkit-gradient(linear,0 0, 0 100%, from(#61380B), to(#eee));
+	box-shadow:inset 0 0 10px rgba(0,0,0,.4);
+	-moz-box-shadow:inset 0 0 10px rgba(0,0,0,.4);
+	-webkit-box-shadow:inset 0 0 10px rgba(0,0,0,.4);
+}
+
+#cat:after {
+content: '\1F63C';
+color:black;
+}
+
+#mouse:after {
+content: '\1F42D';
+color:red;
+}

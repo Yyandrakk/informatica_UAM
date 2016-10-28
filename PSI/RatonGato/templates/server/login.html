@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Server Log in</title>
+    </head>
+
+    <body>
+        <h1>Log in</h1>
+
+        <form id="login_form" method="post" action="login">
+
+            {% csrf_token %}
+            {{ mesage }}<br/>
+
+            {% for field in form.visible_fields %}
+                {{ field.errors }}
+                {{ field.help_text }}
+                {{ field }}<br/>
+            {% endfor %}
+
+            <input type="submit" name="submit" value="Enter" />
+        </form>
+    </body>
+
+</html>

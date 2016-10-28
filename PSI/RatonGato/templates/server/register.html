@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Server Register</title>
+    </head>
+
+    <body>
+        <h1>Add a User</h1>
+
+        <form id="register_form" method="post" action="register">
+
+            {% csrf_token %}
+
+
+            {% for field in form.visible_fields %}
+                {{ field.errors }}
+                {{ field.help_text }}
+                {{ field }}<br/>
+            {% endfor %}
+
+            <input type="submit" name="submit" value="Create User" />
+        </form>
+    </body>
+
+</html>
