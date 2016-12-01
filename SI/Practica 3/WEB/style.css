@@ -1,0 +1,316 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 17-sep-2015, 9:53:56
+    Author     : e280671
+*/
+
+@font-face {
+  font-family: Roboto;
+  src: url(roboto/Roboto-Regular.ttf);
+}
+body{
+    padding-top: 9.5em;
+    padding-bottom: 3em;
+    background:  #00478A;
+    font-family: Roboto;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+h1{
+    font-size: 2em;
+    line-height: 1.3em;
+    margin: 15px 0;
+    text-align: center;
+    font-weight: 300;
+}
+form{
+    margin: 1em  20em 0 20em;
+}
+
+section{
+    width: 88%;
+    float: right;
+    background:#A3D1FF ;
+    margin: 20px auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    box-shadow: 0 0 10px black;
+}
+
+
+
+
+section article{
+    float: left;
+    background:#CCE6FF ;
+    margin: 20px 1.2em;
+    padding: 1em 1em;
+    box-shadow: 0 0 10px black;
+}
+#cabecera{
+    color:khaki;
+    background:darkblue;
+    height:9.5em;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    box-shadow: 10px 0 10px black;
+}
+#cabecera a{
+    color:khaki;
+}
+
+#logo{
+    float:left;
+    padding: 15px 0 0 20px;
+    text-decoration: plum;
+}
+#logo:hover{
+    color: lightseagreen;
+}
+#logo .site-name{
+    display: block;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+#logo .site-desc{
+    display: block;
+    font-weight: 300;
+    font-size: 0.8em;
+    color:gold;
+}
+
+nav{
+    float:right;
+}
+
+nav ul{
+    margin:0;
+    padding: 0;
+    list-style:square;
+    padding-right: 20px;
+}
+
+nav ul li{
+    display:inline-block;
+    line-height: 80px;
+
+}
+
+nav ul li a{
+    display:block;
+    padding: 0 10px;
+    text-decoration:coral;
+
+
+}
+
+nav ul li a:hover{
+    background:#81DAF5;
+
+
+}
+aside{
+    float: left;
+    background: beige;
+    width: 10%;
+    height: auto;
+    margin-top: 1px;
+    box-shadow: 0 0 10px black;
+    min-width: 100px;
+}
+#Barra{
+    float: left;
+
+}
+#Barra ul{
+    margin:0;
+    padding: 0;
+    list-style:square;
+    padding-right: 20px;
+    width: 85%;
+}
+
+#Barra ul li{
+    display: inline-block;
+    line-height: 80px;
+
+}
+
+#Barra ul li a{
+    display:block;
+    padding: 0 10px;
+    text-decoration:coral;
+    width: auto;
+
+
+}
+
+#Barra ul li a:hover{
+    background:#81DAF5;
+
+
+}
+
+#apuesta{
+    width: 88%;
+    float: right;
+    background:#A3D1FF ;
+    margin-top: 1px;
+    line-height: 65px;
+    box-shadow: none;
+}
+
+#apuesta article{
+    width: 60%;
+    float: left;
+    background:none ;
+    margin: 20px;
+    padding: 0;
+    box-shadow: none;
+
+}
+#apuesta article form{
+    width: 60%;
+    float: left;
+    background:none ;
+    margin: 20px;
+    padding: 0;
+    box-shadow: none;
+}
+
+table{
+    border-collapse: collapse;
+    margin: 0;
+}
+
+table th, td{
+    border:1px solid #333;
+    text-align: center;
+
+}
+footer {
+	background: #333;
+	color: white;
+	text-align: center;
+        height: 3em;
+        width: 100%;
+        left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	bottom: 0; /* Posicionamos la cabecera pegada arriba */
+	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+}
+#historial h1{
+    font-size: 2.1em;
+    line-height: 1.3em;
+    margin: 15px 0;
+    text-align: center;
+    font-weight: 500;
+
+}
+#historial table{
+     border-collapse: collapse;
+     margin: 10px auto;
+
+}
+#historial th{
+    font-size: 1.2em;
+}
+#historial table,#historial th,#historial td{
+   border: 1px solid black;
+   text-align: center;
+   padding: 1em;
+}
+#user{
+text-align: right;
+margin-top: 0;
+}
+
+.cambiar{
+  display: none;
+}
+
+body .sinBarra{
+	width: 100%;
+	float: none;
+	background:#A3D1FF ;
+	margin: 20px auto;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	box-shadow: 0 0 10px black;
+}
+body .sinBarra article{
+    width: 60%;
+    float: left;
+    background:none ;
+    margin: 20px;
+    padding: 0;
+    box-shadow: none;
+
+}
+body .sinBarra article form{
+    width: 60%;
+    float: left;
+    background:none ;
+    margin: 20px;
+    padding: 0;
+    box-shadow: none;
+}
+
+
+/*
+.invalid {
+    background:url(../imagenes/cruz_roja.png) no-repeat 0 50%;
+    padding-left:22px;
+    line-height:24px;
+    color:#ec3f41;
+}
+.valid {
+    background:url(../imagenes/tick.icon.png) no-repeat 0 50%;
+    padding-left:22px;
+    line-height:24px;
+    color:#3a7d34;
+}
+
+#psw_prop {
+    position:absolute;
+    bottom:-75px;
+    bottom: -115px\9;
+    right:55px;
+    width:250px;
+    padding:15px;
+    background:#fefefe;
+    font-size:.875em;
+    border:1px solid #ddd;
+}
+
+#psw_prop::before {
+    content: "\25B2";
+    position:absolute;
+    top:-12px;
+    left:45%;
+    font-size:14px;
+    line-height:14px;
+    color:#ddd;
+    text-shadow:none;
+    display:block;
+}
+
+#pswd_prop h4 {
+    bottom:15px;
+    padding:0;
+    font-weight:normal;
+}
+*/
+
+
+
+}
+
+#pswd_prop {
+    display:none;
+}

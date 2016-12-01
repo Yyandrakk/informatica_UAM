@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE helloworld SYSTEM "dtd-datos.dtd">
+<apuestas>
+
+	<deporte>
+		<titulo>Futbol</titulo>
+		<partidos>
+			<partido>
+				<id>1</id>
+				<equipo1>Real Madrid</equipo1>
+				<equipo2>FC Barcelona</equipo2>
+				<fecha>08/11/1015 a las 21:30</fecha>
+				<gana1>1</gana1>
+				<empata>2</empata>
+				<gana2>3</gana2>
+			</partido>
+			<partido>
+				<id>2</id>
+				<equipo1>Atletico de Madrid</equipo1>
+				<equipo2>Sevilla CF</equipo2>
+				<fecha>07/11/1015 a las 20:30</fecha>
+				<gana1>2</gana1>
+				<empata>1</empata>
+				<gana2>3</gana2>
+			</partido>
+			<partido>
+				<id>3</id>
+				<equipo1>Celta</equipo1>
+				<equipo2>Villarreal</equipo2>
+				<fecha>08/11/1015 a las 18:30</fecha>
+				<gana1>3</gana1>
+				<empata>1</empata>
+				<gana2>2</gana2>
+			</partido>
+		</partidos>
+	</deporte>
+
+	<deporte>
+		<titulo>Baloncesto</titulo>
+		<partidos>
+			<partido>
+				<id>4</id>
+				<equipo1>Real Madrid</equipo1>
+				<equipo2>Barcelona</equipo2>
+				<fecha>20/11/1015 a las 21:30</fecha>
+				<gana1>1</gana1>
+				<empata>2</empata>
+				<gana2>3</gana2>
+			</partido>
+			<partido>
+				<id>5</id>
+				<equipo1>Unicaja</equipo1>
+				<equipo2>CAI Zaragoza</equipo2>
+				<fecha>15/11/1015 a las 17:30</fecha>
+				<gana1>4</gana1>
+				<empata>2.5</empata>
+				<gana2>1</gana2>
+			</partido>
+			<partido>
+				<id>6</id>
+				<equipo1>Movistar Estudiantes</equipo1>
+				<equipo2>Valencia Basket</equipo2>
+				<fecha>17/11/1015 a las 19:30</fecha>
+				<gana1>2</gana1>
+				<empata>1</empata>
+				<gana2>3.5</gana2>
+			</partido>
+		</partidos>
+	</deporte>
+
+	<deporte>
+		<titulo>Tenis</titulo>
+		<partidos>
+			<partido>
+				<id>7</id>
+				<equipo1>Rafael Nadal</equipo1>
+				<equipo2>Novak Djokovic</equipo2>
+				<fecha>13/11/1015 a las 19:30</fecha>
+				<gana1>3.5</gana1>
+				<empata>-1</empata>
+				<gana2>1.5</gana2>
+			</partido>
+			<partido>
+				<id>8</id>
+				<equipo1>David Ferrer</equipo1>
+				<equipo2>Roger Federer</equipo2>
+				<fecha>13/11/1015 a las 17:30</fecha>
+				<gana1>2.5</gana1>
+				<empata>-1</empata>
+				<gana2>2.5</gana2>
+			</partido>
+			<partido>
+				<id>9</id>
+				<equipo1>Andy Murray</equipo1>
+				<equipo2>Feliciano Lopez</equipo2>
+				<fecha>12/11/1015 a las 20:30</fecha>
+				<gana1>1.5</gana1>
+				<empata>-1</empata>
+				<gana2>3.5</gana2>
+			</partido>
+		</partidos>
+	</deporte>
+
+	<deporte>
+		<titulo>Balonmano</titulo>
+		<partidos>
+			<partido>
+				<id>10</id>
+				<equipo1>Naturhouse La Rioja</equipo1>
+				<equipo2>BM. Benidorm</equipo2>
+				<fecha>09/11/1015 a las 20:30</fecha>
+				<gana1>1.5</gana1>
+				<empata>1</empata>
+				<gana2>3.5</gana2>
+			</partido>
+			<partido>
+				<id>11</id>
+				<equipo1>F.C. Barcelona Lassa</equipo1>
+				<equipo2>Naturhouse La Rioja</equipo2>
+				<fecha>09/11/1015 a las 17:30</fecha>
+				<gana1>1</gana1>
+				<empata>2</empata>
+				<gana2>1.5</gana2>
+			</partido>
+			<partido>
+				<id>12</id>
+				<equipo1> Fertiberia Puerto Sagunto</equipo1>
+				<equipo2>BM. Aragon</equipo2>
+				<fecha>09/11/1015 a las 17:30</fecha>
+				<gana1>1</gana1>
+				<empata>1.5</empata>
+				<gana2>4</gana2>
+			</partido>
+		</partidos>
+	</deporte>
+
+</apuestas>
