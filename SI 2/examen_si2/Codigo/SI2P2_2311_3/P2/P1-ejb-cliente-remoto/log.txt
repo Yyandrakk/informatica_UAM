@@ -1,0 +1,442 @@
+Buildfile: /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/build.xml
+
+montar-jerarquia:
+
+compilar:
+    [javac] Compiling 16 source files to /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/build/WEB-INF/classes
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/ComienzaPago.java:27: error: package javax.servlet does not exist
+    [javac] import javax.servlet.ServletException;
+    [javac]                     ^
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/ComienzaPago.java:28: error: package javax.servlet.http does not exist
+    [javac] import javax.servlet.http.HttpServletRequest;
+    [javac]                          ^
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/ComienzaPago.java:29: error: package javax.servlet.http does not exist
+    [javac] import javax.servlet.http.HttpServletResponse;
+    [javac]                          ^
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/ServletRaiz.java:15: error: package javax.servlet does not exist
+    [javac] import javax.servlet.RequestDispatcher;
+    [javac]                     ^
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/ServletRaiz.java:16: error: package javax.servlet does not exist
+    [javac] import javax.servlet.ServletException;
+    [javac]                     ^
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/ServletRaiz.java:17: error: package javax.servlet.http does not exist
+    [javac] import javax.servlet.http.HttpServlet;
+    [javac]                          ^
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/ServletRaiz.java:18: error: package javax.servlet.http does not exist
+    [javac] import javax.servlet.http.HttpServletRequest;
+    [javac]                          ^
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/ServletRaiz.java:19: error: package javax.servlet.http does not exist
+    [javac] import javax.servlet.http.HttpServletResponse;
+    [javac]                          ^
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/ServletRaiz.java:25: error: cannot find symbol
+    [javac] public abstract class ServletRaiz extends HttpServlet {
+    [javac]                                           ^
+    [javac]   symbol: class HttpServlet
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/ComienzaPago.java:68: error: cannot find symbol
+    [javac]     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
+    [javac]                                   ^
+    [javac]   symbol:   class HttpServletRequest
+    [javac]   location: class ComienzaPago
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/ComienzaPago.java:68: error: cannot find symbol
+    [javac]     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
+    [javac]                                                               ^
+    [javac]   symbol:   class HttpServletResponse
+    [javac]   location: class ComienzaPago
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/ComienzaPago.java:69: error: cannot find symbol
+    [javac]     throws ServletException, IOException {        
+    [javac]            ^
+    [javac]   symbol:   class ServletException
+    [javac]   location: class ComienzaPago
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/ComienzaPago.java:95: error: cannot find symbol
+    [javac]     protected void doGet(HttpServletRequest request, HttpServletResponse response)
+    [javac]                          ^
+    [javac]   symbol:   class HttpServletRequest
+    [javac]   location: class ComienzaPago
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/ComienzaPago.java:95: error: cannot find symbol
+    [javac]     protected void doGet(HttpServletRequest request, HttpServletResponse response)
+    [javac]                                                      ^
+    [javac]   symbol:   class HttpServletResponse
+    [javac]   location: class ComienzaPago
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/ComienzaPago.java:96: error: cannot find symbol
+    [javac]     throws ServletException, IOException {
+    [javac]            ^
+    [javac]   symbol:   class ServletException
+    [javac]   location: class ComienzaPago
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/ComienzaPago.java:106: error: cannot find symbol
+    [javac]     protected void doPost(HttpServletRequest request, HttpServletResponse response)
+    [javac]                           ^
+    [javac]   symbol:   class HttpServletRequest
+    [javac]   location: class ComienzaPago
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/ComienzaPago.java:106: error: cannot find symbol
+    [javac]     protected void doPost(HttpServletRequest request, HttpServletResponse response)
+    [javac]                                                       ^
+    [javac]   symbol:   class HttpServletResponse
+    [javac]   location: class ComienzaPago
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/ComienzaPago.java:107: error: cannot find symbol
+    [javac]     throws ServletException, IOException {
+    [javac]            ^
+    [javac]   symbol:   class ServletException
+    [javac]   location: class ComienzaPago
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/ComienzaPago.java:148: error: cannot find symbol
+    [javac]     private PagoBean creaPago(HttpServletRequest request) {
+    [javac]                               ^
+    [javac]   symbol:   class HttpServletRequest
+    [javac]   location: class ComienzaPago
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/ServletRaiz.java:32: error: cannot find symbol
+    [javac]     protected abstract void processRequest(HttpServletRequest request, HttpServletResponse response)
+    [javac]                                            ^
+    [javac]   symbol:   class HttpServletRequest
+    [javac]   location: class ServletRaiz
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/ServletRaiz.java:32: error: cannot find symbol
+    [javac]     protected abstract void processRequest(HttpServletRequest request, HttpServletResponse response)
+    [javac]                                                                        ^
+    [javac]   symbol:   class HttpServletResponse
+    [javac]   location: class ServletRaiz
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/ServletRaiz.java:33: error: cannot find symbol
+    [javac]             throws ServletException, IOException;
+    [javac]                    ^
+    [javac]   symbol:   class ServletException
+    [javac]   location: class ServletRaiz
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/ServletRaiz.java:41: error: cannot find symbol
+    [javac]     protected void doGet(HttpServletRequest request, HttpServletResponse response)
+    [javac]                          ^
+    [javac]   symbol:   class HttpServletRequest
+    [javac]   location: class ServletRaiz
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/ServletRaiz.java:41: error: cannot find symbol
+    [javac]     protected void doGet(HttpServletRequest request, HttpServletResponse response)
+    [javac]                                                      ^
+    [javac]   symbol:   class HttpServletResponse
+    [javac]   location: class ServletRaiz
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/ServletRaiz.java:42: error: cannot find symbol
+    [javac]     throws ServletException, IOException {
+    [javac]            ^
+    [javac]   symbol:   class ServletException
+    [javac]   location: class ServletRaiz
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/ServletRaiz.java:52: error: cannot find symbol
+    [javac]     protected void doPost(HttpServletRequest request, HttpServletResponse response)
+    [javac]                           ^
+    [javac]   symbol:   class HttpServletRequest
+    [javac]   location: class ServletRaiz
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/ServletRaiz.java:52: error: cannot find symbol
+    [javac]     protected void doPost(HttpServletRequest request, HttpServletResponse response)
+    [javac]                                                       ^
+    [javac]   symbol:   class HttpServletResponse
+    [javac]   location: class ServletRaiz
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/ServletRaiz.java:53: error: cannot find symbol
+    [javac]     throws ServletException, IOException {
+    [javac]            ^
+    [javac]   symbol:   class ServletException
+    [javac]   location: class ServletRaiz
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/ServletRaiz.java:66: error: cannot find symbol
+    [javac]     protected void enviaError(Throwable t, HttpServletRequest request, HttpServletResponse response) 
+    [javac]                                            ^
+    [javac]   symbol:   class HttpServletRequest
+    [javac]   location: class ServletRaiz
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/ServletRaiz.java:66: error: cannot find symbol
+    [javac]     protected void enviaError(Throwable t, HttpServletRequest request, HttpServletResponse response) 
+    [javac]                                                                        ^
+    [javac]   symbol:   class HttpServletResponse
+    [javac]   location: class ServletRaiz
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/ServletRaiz.java:67: error: cannot find symbol
+    [javac]         throws ServletException, IOException {
+    [javac]                ^
+    [javac]   symbol:   class ServletException
+    [javac]   location: class ServletRaiz
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/ServletRaiz.java:82: error: cannot find symbol
+    [javac]     protected void accesoNoAutorizado(HttpServletRequest request, HttpServletResponse response)
+    [javac]                                       ^
+    [javac]   symbol:   class HttpServletRequest
+    [javac]   location: class ServletRaiz
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/ServletRaiz.java:82: error: cannot find symbol
+    [javac]     protected void accesoNoAutorizado(HttpServletRequest request, HttpServletResponse response)
+    [javac]                                                                   ^
+    [javac]   symbol:   class HttpServletResponse
+    [javac]   location: class ServletRaiz
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/ServletRaiz.java:83: error: cannot find symbol
+    [javac]         throws ServletException, IOException {
+    [javac]                ^
+    [javac]   symbol:   class ServletException
+    [javac]   location: class ServletRaiz
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/ServletRaiz.java:95: error: cannot find symbol
+    [javac]     protected void errorDesconocido(HttpServletRequest request, HttpServletResponse response)
+    [javac]                                     ^
+    [javac]   symbol:   class HttpServletRequest
+    [javac]   location: class ServletRaiz
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/ServletRaiz.java:95: error: cannot find symbol
+    [javac]     protected void errorDesconocido(HttpServletRequest request, HttpServletResponse response)
+    [javac]                                                                 ^
+    [javac]   symbol:   class HttpServletResponse
+    [javac]   location: class ServletRaiz
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/ServletRaiz.java:96: error: cannot find symbol
+    [javac]         throws ServletException, IOException {
+    [javac]                ^
+    [javac]   symbol:   class ServletException
+    [javac]   location: class ServletRaiz
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/ServletRaiz.java:110: error: cannot find symbol
+    [javac]     protected void reenvia(String ruta, HttpServletRequest request, HttpServletResponse response)
+    [javac]                                         ^
+    [javac]   symbol:   class HttpServletRequest
+    [javac]   location: class ServletRaiz
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/ServletRaiz.java:110: error: cannot find symbol
+    [javac]     protected void reenvia(String ruta, HttpServletRequest request, HttpServletResponse response)
+    [javac]                                                                     ^
+    [javac]   symbol:   class HttpServletResponse
+    [javac]   location: class ServletRaiz
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/ServletRaiz.java:111: error: cannot find symbol
+    [javac]         throws ServletException, IOException {
+    [javac]                ^
+    [javac]   symbol:   class ServletException
+    [javac]   location: class ServletRaiz
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/DelPagos.java:16: error: package javax.servlet does not exist
+    [javac] import javax.servlet.ServletException;
+    [javac]                     ^
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/DelPagos.java:17: error: package javax.servlet.http does not exist
+    [javac] import javax.servlet.http.HttpServletRequest;
+    [javac]                          ^
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/DelPagos.java:18: error: package javax.servlet.http does not exist
+    [javac] import javax.servlet.http.HttpServletResponse;
+    [javac]                          ^
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/DelPagos.java:20: error: package javax.ejb does not exist
+    [javac] import javax.ejb.EJB; 
+    [javac]                 ^
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/visa/VisaDAORemote.java:21: error: package javax.ejb does not exist
+    [javac] import javax.ejb.Remote;
+    [javac]                 ^
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/visa/VisaDAORemote.java:23: error: cannot find symbol
+    [javac] @Remote
+    [javac]  ^
+    [javac]   symbol: class Remote
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/DelPagos.java:51: error: cannot find symbol
+    [javac]     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
+    [javac]                                   ^
+    [javac]   symbol:   class HttpServletRequest
+    [javac]   location: class DelPagos
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/DelPagos.java:51: error: cannot find symbol
+    [javac]     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
+    [javac]                                                               ^
+    [javac]   symbol:   class HttpServletResponse
+    [javac]   location: class DelPagos
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/DelPagos.java:52: error: cannot find symbol
+    [javac]     throws ServletException, IOException {        
+    [javac]            ^
+    [javac]   symbol:   class ServletException
+    [javac]   location: class DelPagos
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/DelPagos.java:76: error: cannot find symbol
+    [javac]     protected void doGet(HttpServletRequest request, HttpServletResponse response)
+    [javac]                          ^
+    [javac]   symbol:   class HttpServletRequest
+    [javac]   location: class DelPagos
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/DelPagos.java:76: error: cannot find symbol
+    [javac]     protected void doGet(HttpServletRequest request, HttpServletResponse response)
+    [javac]                                                      ^
+    [javac]   symbol:   class HttpServletResponse
+    [javac]   location: class DelPagos
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/DelPagos.java:77: error: cannot find symbol
+    [javac]     throws ServletException, IOException {
+    [javac]            ^
+    [javac]   symbol:   class ServletException
+    [javac]   location: class DelPagos
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/DelPagos.java:87: error: cannot find symbol
+    [javac]     protected void doPost(HttpServletRequest request, HttpServletResponse response)
+    [javac]                           ^
+    [javac]   symbol:   class HttpServletRequest
+    [javac]   location: class DelPagos
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/DelPagos.java:87: error: cannot find symbol
+    [javac]     protected void doPost(HttpServletRequest request, HttpServletResponse response)
+    [javac]                                                       ^
+    [javac]   symbol:   class HttpServletResponse
+    [javac]   location: class DelPagos
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/DelPagos.java:88: error: cannot find symbol
+    [javac]     throws ServletException, IOException {
+    [javac]            ^
+    [javac]   symbol:   class ServletException
+    [javac]   location: class DelPagos
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/GetPagos.java:16: error: package javax.servlet does not exist
+    [javac] import javax.servlet.ServletException;
+    [javac]                     ^
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/GetPagos.java:17: error: package javax.servlet.http does not exist
+    [javac] import javax.servlet.http.HttpServletRequest;
+    [javac]                          ^
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/GetPagos.java:18: error: package javax.servlet.http does not exist
+    [javac] import javax.servlet.http.HttpServletResponse;
+    [javac]                          ^
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/GetPagos.java:20: error: package javax.ejb does not exist
+    [javac] import javax.ejb.EJB; 
+    [javac]                 ^
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/GetPagos.java:51: error: cannot find symbol
+    [javac]     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
+    [javac]                                   ^
+    [javac]   symbol:   class HttpServletRequest
+    [javac]   location: class GetPagos
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/GetPagos.java:51: error: cannot find symbol
+    [javac]     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
+    [javac]                                                               ^
+    [javac]   symbol:   class HttpServletResponse
+    [javac]   location: class GetPagos
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/GetPagos.java:52: error: cannot find symbol
+    [javac]     throws ServletException, IOException {         
+    [javac]            ^
+    [javac]   symbol:   class ServletException
+    [javac]   location: class GetPagos
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/GetPagos.java:71: error: cannot find symbol
+    [javac]     protected void doGet(HttpServletRequest request, HttpServletResponse response)
+    [javac]                          ^
+    [javac]   symbol:   class HttpServletRequest
+    [javac]   location: class GetPagos
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/GetPagos.java:71: error: cannot find symbol
+    [javac]     protected void doGet(HttpServletRequest request, HttpServletResponse response)
+    [javac]                                                      ^
+    [javac]   symbol:   class HttpServletResponse
+    [javac]   location: class GetPagos
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/GetPagos.java:72: error: cannot find symbol
+    [javac]     throws ServletException, IOException {
+    [javac]            ^
+    [javac]   symbol:   class ServletException
+    [javac]   location: class GetPagos
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/GetPagos.java:82: error: cannot find symbol
+    [javac]     protected void doPost(HttpServletRequest request, HttpServletResponse response)
+    [javac]                           ^
+    [javac]   symbol:   class HttpServletRequest
+    [javac]   location: class GetPagos
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/GetPagos.java:82: error: cannot find symbol
+    [javac]     protected void doPost(HttpServletRequest request, HttpServletResponse response)
+    [javac]                                                       ^
+    [javac]   symbol:   class HttpServletResponse
+    [javac]   location: class GetPagos
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/GetPagos.java:83: error: cannot find symbol
+    [javac]     throws ServletException, IOException {
+    [javac]            ^
+    [javac]   symbol:   class ServletException
+    [javac]   location: class GetPagos
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/ProcesaPago.java:42: error: package javax.servlet does not exist
+    [javac] import javax.servlet.ServletException;
+    [javac]                     ^
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/ProcesaPago.java:43: error: package javax.servlet.http does not exist
+    [javac] import javax.servlet.http.HttpServletRequest;
+    [javac]                          ^
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/ProcesaPago.java:44: error: package javax.servlet.http does not exist
+    [javac] import javax.servlet.http.HttpServletResponse;
+    [javac]                          ^
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/ProcesaPago.java:45: error: package javax.servlet.http does not exist
+    [javac] import javax.servlet.http.HttpSession;
+    [javac]                          ^
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/ProcesaPago.java:47: error: package javax.ejb does not exist
+    [javac] import javax.ejb.EJB; 
+    [javac]                 ^
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/ProcesaPago.java:125: error: cannot find symbol
+    [javac] private void printAddresses(HttpServletRequest request, HttpServletResponse response) throws SocketException {
+    [javac]                             ^
+    [javac]   symbol:   class HttpServletRequest
+    [javac]   location: class ProcesaPago
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/ProcesaPago.java:125: error: cannot find symbol
+    [javac] private void printAddresses(HttpServletRequest request, HttpServletResponse response) throws SocketException {
+    [javac]                                                         ^
+    [javac]   symbol:   class HttpServletResponse
+    [javac]   location: class ProcesaPago
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/ProcesaPago.java:139: error: cannot find symbol
+    [javac]     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
+    [javac]                                   ^
+    [javac]   symbol:   class HttpServletRequest
+    [javac]   location: class ProcesaPago
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/ProcesaPago.java:139: error: cannot find symbol
+    [javac]     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
+    [javac]                                                               ^
+    [javac]   symbol:   class HttpServletResponse
+    [javac]   location: class ProcesaPago
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/ProcesaPago.java:140: error: cannot find symbol
+    [javac]     throws ServletException, IOException {
+    [javac]            ^
+    [javac]   symbol:   class ServletException
+    [javac]   location: class ProcesaPago
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/ProcesaPago.java:192: error: cannot find symbol
+    [javac]     private TarjetaBean creaTarjeta(HttpServletRequest request) {
+    [javac]                                     ^
+    [javac]   symbol:   class HttpServletRequest
+    [javac]   location: class ProcesaPago
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/controlador/ProcesaPago.java:208: error: cannot find symbol
+    [javac]     private PagoBean creaPago(HttpServletRequest request) {
+    [javac]                               ^
+    [javac]   symbol:   class HttpServletRequest
+    [javac]   location: class ProcesaPago
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/filtros/CompruebaSesion.java:12: error: package javax.servlet does not exist
+    [javac] import javax.servlet.Filter;
+    [javac]                     ^
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/filtros/CompruebaSesion.java:13: error: package javax.servlet does not exist
+    [javac] import javax.servlet.FilterChain;
+    [javac]                     ^
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/filtros/CompruebaSesion.java:14: error: package javax.servlet does not exist
+    [javac] import javax.servlet.FilterConfig;
+    [javac]                     ^
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/filtros/CompruebaSesion.java:15: error: package javax.servlet does not exist
+    [javac] import javax.servlet.RequestDispatcher;
+    [javac]                     ^
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/filtros/CompruebaSesion.java:16: error: package javax.servlet does not exist
+    [javac] import javax.servlet.ServletException;
+    [javac]                     ^
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/filtros/CompruebaSesion.java:17: error: package javax.servlet does not exist
+    [javac] import javax.servlet.ServletRequest;
+    [javac]                     ^
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/filtros/CompruebaSesion.java:18: error: package javax.servlet does not exist
+    [javac] import javax.servlet.ServletResponse;
+    [javac]                     ^
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/filtros/CompruebaSesion.java:19: error: package javax.servlet.http does not exist
+    [javac] import javax.servlet.http.HttpServletRequest;
+    [javac]                          ^
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/filtros/CompruebaSesion.java:20: error: package javax.servlet.http does not exist
+    [javac] import javax.servlet.http.HttpSession;
+    [javac]                          ^
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/filtros/CompruebaSesion.java:28: error: cannot find symbol
+    [javac] public class CompruebaSesion implements Filter {
+    [javac]                                         ^
+    [javac]   symbol: class Filter
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/filtros/CompruebaSesion.java:32: error: cannot find symbol
+    [javac]     private FilterConfig filterconfig = null;
+    [javac]             ^
+    [javac]   symbol:   class FilterConfig
+    [javac]   location: class CompruebaSesion
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/filtros/CompruebaSesion.java:40: error: cannot find symbol
+    [javac]     public void init(FilterConfig fc) {        
+    [javac]                      ^
+    [javac]   symbol:   class FilterConfig
+    [javac]   location: class CompruebaSesion
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/filtros/CompruebaSesion.java:63: error: cannot find symbol
+    [javac]     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)  
+    [javac]                          ^
+    [javac]   symbol:   class ServletRequest
+    [javac]   location: class CompruebaSesion
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/filtros/CompruebaSesion.java:63: error: cannot find symbol
+    [javac]     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)  
+    [javac]                                                  ^
+    [javac]   symbol:   class ServletResponse
+    [javac]   location: class CompruebaSesion
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/filtros/CompruebaSesion.java:63: error: cannot find symbol
+    [javac]     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)  
+    [javac]                                                                            ^
+    [javac]   symbol:   class FilterChain
+    [javac]   location: class CompruebaSesion
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/filtros/CompruebaSesion.java:64: error: cannot find symbol
+    [javac]     throws IOException, ServletException { 
+    [javac]                         ^
+    [javac]   symbol:   class ServletException
+    [javac]   location: class CompruebaSesion
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/filtros/CompruebaSesion.java:100: error: cannot find symbol
+    [javac]     private void muestraerror(String ruta, ServletRequest request, ServletResponse response) 
+    [javac]                                            ^
+    [javac]   symbol:   class ServletRequest
+    [javac]   location: class CompruebaSesion
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/filtros/CompruebaSesion.java:100: error: cannot find symbol
+    [javac]     private void muestraerror(String ruta, ServletRequest request, ServletResponse response) 
+    [javac]                                                                    ^
+    [javac]   symbol:   class ServletResponse
+    [javac]   location: class CompruebaSesion
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/filtros/CompruebaSesion.java:101: error: cannot find symbol
+    [javac]         throws ServletException, IOException {        
+    [javac]                ^
+    [javac]   symbol:   class ServletException
+    [javac]   location: class CompruebaSesion
+    [javac] /home/alumnos/e284672/Desktop/P1-ejb-cliente-remoto/src/ssii2/filtros/CompruebaSesion.java:115: error: cannot find symbol
+    [javac]     private void reenvia(String ruta, ServletRequest request, ServletResponse response)
+    [javac]                                       ^
+    [javac]   symbol:   class ServletRequest
+    [javac]   location: class CompruebaSesion
+    [javac] 100 errors

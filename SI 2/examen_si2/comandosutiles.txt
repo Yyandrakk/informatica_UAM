@@ -1,0 +1,14 @@
+### Máquina virtual
+
+User: si2
+Pass: 2017sid0s
+
+export J2EE_HOME=/usr/local/glassfish-4.1.1/glassfish
+sudo /opt/si2/virtualip.sh eth0
+
+-Copy the file "foobar.txt" from a remote host to the local host
+
+  $ scp your_username@remotehost.edu:foobar.txt /some/local/directory
+-Copy the file "foobar.txt" from the local host to a remote host
+
+  $ scp foobar.txt your_username@remotehost.edu:/some/remote/directory

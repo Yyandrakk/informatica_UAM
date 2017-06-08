@@ -1,0 +1,13 @@
+Autores: Santiago Gomez
+         Oscar Garcia de Lara
+
+Ademas del fichero que se nos proporciona hemos creado otros, el motivo es para
+poder trabajar mejor paralelamente y evitar el copiar y pegar entre lo que hace uno
+y el archivo final.
+
+practica.h: Sirve para las cabeceras de las funciones, poner los includes y variables globales
+eth.*: Tiene las funciones para leer la cabecera Ethernet
+ip.*: Tiene las funciones para leer la cabecera IP,
+      hemos dejado algunas cosas en hexadecimal para que lo muestre como el Wireshark
+transporte.*:Tiene las funciones para leer la cabecera TCP o UDP
+variables.h: Tiene los defines comunes y los includes necesarios para toda la practica.

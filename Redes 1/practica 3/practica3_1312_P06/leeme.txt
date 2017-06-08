@@ -1,0 +1,25 @@
+Autores:
+Santiago Gomez Aguirre
+Oscar Garcia de Lara Parreño
+
+Los scripts auxiliares son 4:
+-El primero para obtener los porcentajes de los paquetes.
+-El segundo para obtener los top ten.
+-El tercero para los tamaños a nivel 2.
+-El cuarto el throughput y flujos.
+
+Para ejecutar todos los script solo hace falta meter 'traza.pcap' en la carpeta de los script
+y ejercutar sh practica3_analisis.sh en esa carpeta, de todos modos hemos incluido otra carpeta con los resultados obtenidos,
+graficas ECDF y ficheros.
+
+Tambien decir que el flujo de TCP lo hacemos a sentido a nivel 3 ya que es lo que nos proporcionaba al generar la traza
+
+"Generando traza (traza.pcap) para la pareja 6 del grupo 1312. (id=131206)
+Epoch de inicio: 1478363629
+
+Información útil para el estudiante:
+La dirección MAC que deberá tener en cuenta es: 00:11:88:CC:33:7B
+La dirección IP (origen o destino) del flujo TCP que deberá tener en cuenta es: 120.24.138.137
+El puerto (origen o destino) del flujo UDP que deberá tener en cuenta es: 14286
+
+PCAP generado con éxito!"

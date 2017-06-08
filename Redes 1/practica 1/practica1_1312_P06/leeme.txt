@@ -1,0 +1,6 @@
+Autores: Santiago Gómez Aguirre y Oscar García de Lara Parreño
+Pareja: 06
+
+En la captura 1 mostramos el ultimo paquete y en la 2 en antepenultimo
+para comprobar mejor que los Byte que muestra el programa corresponde con
+lo que muestra en Wireshark

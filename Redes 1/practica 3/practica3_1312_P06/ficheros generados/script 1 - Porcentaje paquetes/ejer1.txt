@@ -1,0 +1,5 @@
+PorcentajeIP 99.01
+PorcentajeNoIp 0.99
+PorcentajeTCP 89.59
+PorcentajeUDP 9.73
+PorcentajeOther 1.68
