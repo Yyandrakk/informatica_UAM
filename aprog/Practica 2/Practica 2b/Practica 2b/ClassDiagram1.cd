@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="Practica_2b.API_Hundir_Flota">
+    <Position X="6" Y="4.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAEQAAABAAAABAAAAAgAAAIAAAAAAAAIA=</HashCode>
+      <FileName>API_Hundir_Flota.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Practica_2b.Barco">
+    <Position X="2" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAABACAAAAAAAAEAAAAAAAAAAQBAAAAAAAAAEAAAABA=</HashCode>
+      <FileName>Barco.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Practica_2b.BarcoVertical">
+    <Position X="0.5" Y="3.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAAAEAAAABA=</HashCode>
+      <FileName>Barco.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Practica_2b.BarcoHorizontal">
+    <Position X="2.75" Y="3.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAAAEAAAABA=</HashCode>
+      <FileName>Barco.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Practica_2b.Casilla">
+    <Position X="8.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Casilla.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Practica_2b.Coordenada">
+    <Position X="8.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAEgAAAAAAAAAAAAIAAAAAAAAAAYjA=</HashCode>
+      <FileName>Coordenada.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Practica_2b.ExcepcionBarcoErroneo">
+    <Position X="13.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Excepciones.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Practica_2b.ExcepcionDisparoErroneo">
+    <Position X="13.25" Y="1.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Excepciones.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Practica_2b.Flota">
+    <Position X="10.25" Y="1" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAEAAAAAAAAAAIAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Flota.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Practica_2b.GUI_Hundir_Flota">
+    <Position X="6" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>GUI_Hundir_Flota.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Practica_2b.Program">
+    <Position X="5.75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAAAAAACAAAAADAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Practica_2b.Tablero">
+    <Position X="10.25" Y="4.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAADACAABEAAAAAAAAAAoAAgAAAAAAAAAAAgA=</HashCode>
+      <FileName>Tablero.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Practica_2b.Estado">
+    <Position X="13.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAEAACAAAAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Casilla.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
