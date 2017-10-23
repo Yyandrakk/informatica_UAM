@@ -12,7 +12,7 @@ LETDIG [a-zA-Z0-9]
 "//".*	{columna+=yyleng;return TOK_COMENTARIO;}
 "main"	{columna+=yyleng;return TOK_MAIN;}
 "int"	{columna+=yyleng;return TOK_INT;}
-"bolean"	{columna+=yyleng;return TOK_BOOLEAN;}
+"boolean"	{columna+=yyleng;return TOK_BOOLEAN;}
 "array"	{columna+=yyleng;return TOK_ARRAY;}
 "function"	{columna+=yyleng;return TOK_FUNCTION;}
 "if"	{columna+=yyleng;return TOK_IF;}
@@ -70,7 +70,7 @@ int main(int argc, char **argv){
 				fprintf(yyout,"TOK_BOOLEAN\t%d\t%s\n",TOK_BOOLEAN,yytext);
 			break;
 			case TOK_ARRAY:
-				fprintf(yyout,"TOK_BOOLEAN\t%d\t%s\n",TOK_BOOLEAN,yytext);
+				fprintf(yyout,"TOK_ARRAY\t%d\t%s\n",TOK_ARRAY,yytext);
 			break;
 			case TOK_FUNCTION:
 				fprintf(yyout,"TOK_FUNCTION\t%d\t%s\n",TOK_FUNCTION,yytext);
