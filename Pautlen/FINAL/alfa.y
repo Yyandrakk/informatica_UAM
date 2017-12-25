@@ -366,7 +366,7 @@ elemento_vector: TOK_IDENTIFICADOR TOK_CORCHETEIZQUIERDO exp TOK_CORCHETEDERECHO
 		}
 		$$.tipo=returnTipoHash ($1.lexema,ts_global);
 		$$.es_direccion=1;
-		escribirElemVector($$.es_direccion,$1.lexema,ts_global);
+		escribirElemVector($3.es_direccion,$1.lexema,ts_global);
 
 	}
 	else
@@ -403,7 +403,7 @@ elemento_vector: TOK_IDENTIFICADOR TOK_CORCHETEIZQUIERDO exp TOK_CORCHETEDERECHO
 				}
 				$$.tipo=returnTipoHash ($1.lexema,ts_global);
 				$$.es_direccion=1;
-				escribirElemVector($$.es_direccion,$1.lexema,ts_global);
+				escribirElemVector($3.es_direccion,$1.lexema,ts_global);
 
 			 }
 			else
@@ -431,7 +431,7 @@ elemento_vector: TOK_IDENTIFICADOR TOK_CORCHETEIZQUIERDO exp TOK_CORCHETEDERECHO
 				}
 				$$.tipo=returnTipoHash ($1.lexema,ts_local);
 				$$.es_direccion=1;
-				escribirElemVector($$.es_direccion,$1.lexema,ts_local);
+				escribirElemVector($3.es_direccion,$1.lexema,ts_local);
 	}
 }
 
@@ -745,6 +745,7 @@ idpf: TOK_IDENTIFICADOR {
 		num_param_actual++;
 		pos_param_actual++;
  }
+ ;
 identificador: TOK_IDENTIFICADOR {
 	if(error==-1){
 		tipoErrorSemantico=2;
